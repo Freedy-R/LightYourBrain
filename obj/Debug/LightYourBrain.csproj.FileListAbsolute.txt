@@ -1,0 +1,11 @@
+F:\Programowanie\C#\Projekty\LightYourBrain\bin\Debug\LightYourBrain.exe.config
+F:\Programowanie\C#\Projekty\LightYourBrain\bin\Debug\LightYourBrain.exe
+F:\Programowanie\C#\Projekty\LightYourBrain\bin\Debug\LightYourBrain.pdb
+F:\Programowanie\C#\Projekty\LightYourBrain\obj\Debug\LightYourBrain.csproj.AssemblyReference.cache
+F:\Programowanie\C#\Projekty\LightYourBrain\obj\Debug\LightYourBrain.csproj.SuggestedBindingRedirects.cache
+F:\Programowanie\C#\Projekty\LightYourBrain\obj\Debug\LightYourBrain.LightYourBrain_mainForm.resources
+F:\Programowanie\C#\Projekty\LightYourBrain\obj\Debug\LightYourBrain.Properties.Resources.resources
+F:\Programowanie\C#\Projekty\LightYourBrain\obj\Debug\LightYourBrain.csproj.GenerateResource.cache
+F:\Programowanie\C#\Projekty\LightYourBrain\obj\Debug\LightYourBrain.csproj.CoreCompileInputs.cache
+F:\Programowanie\C#\Projekty\LightYourBrain\obj\Debug\LightYourBrain.exe
+F:\Programowanie\C#\Projekty\LightYourBrain\obj\Debug\LightYourBrain.pdb

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LightYourBrain
 {
-    public partial class Form1 : Form
+    public partial class LightYourBrain_mainForm : Form
     {
-        public Form1()
+        public LightYourBrain_mainForm()
         {
             InitializeComponent();
         }
