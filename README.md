@@ -1,4 +1,4 @@
-#LightYourBrain - Quiz (PL)
+# LightYourBrain - Quiz (PL) 
 
 Członkowie grupy: Wierzba, Freedy-R, Swedzinos
 
@@ -9,7 +9,7 @@ Użytkownik rejestruje się w aplikacji, gdzie musi odpowiadać na pytania z ró
 Aplikacja jest przygotowana dla jednego gracza, a pytania będą losowane. 
 Każda poprawna odpowiedź skutkuje zwiększeniem liczby punktów. 
 Po zakończeniu gry będzie wyświetlany wynik.
-Podczas gry będzie odtwarzany backgroud-muzyka.
+Podczas gry będzie odtwarzana muzyka w tle.
 
 Główne funkcje:
 
