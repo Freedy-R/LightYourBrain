@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace LightYourBrain
 {
-    public partial class LightYourBrain_mainForm : Form
+    public partial class QuestionsForm_main : Form
     {
-        public LightYourBrain_mainForm()
+        public QuestionsForm_main()
         {
             InitializeComponent();
         }
 
-        private void StartGame(object sender, MouseEventArgs e)
+        private void QuestionsForm_Load(object sender, EventArgs e)
         {
-            var questionsForm = new QuestionsForm_main();
-            questionsForm.ShowDialog();
+            
         }
     }
 }

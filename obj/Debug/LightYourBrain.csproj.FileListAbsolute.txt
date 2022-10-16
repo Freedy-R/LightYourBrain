@@ -9,3 +9,15 @@ F:\Programowanie\C#\Projekty\LightYourBrain\obj\Debug\LightYourBrain.csproj.Gene
 F:\Programowanie\C#\Projekty\LightYourBrain\obj\Debug\LightYourBrain.csproj.CoreCompileInputs.cache
 F:\Programowanie\C#\Projekty\LightYourBrain\obj\Debug\LightYourBrain.exe
 F:\Programowanie\C#\Projekty\LightYourBrain\obj\Debug\LightYourBrain.pdb
+C:\Users\Wierzba\Desktop\LightYourBrain\bin\Debug\LightYourBrain.exe.config
+C:\Users\Wierzba\Desktop\LightYourBrain\bin\Debug\LightYourBrain.exe
+C:\Users\Wierzba\Desktop\LightYourBrain\bin\Debug\LightYourBrain.pdb
+C:\Users\Wierzba\Desktop\LightYourBrain\obj\Debug\LightYourBrain.csproj.AssemblyReference.cache
+C:\Users\Wierzba\Desktop\LightYourBrain\obj\Debug\LightYourBrain.csproj.SuggestedBindingRedirects.cache
+C:\Users\Wierzba\Desktop\LightYourBrain\obj\Debug\LightYourBrain.LightYourBrain_mainForm.resources
+C:\Users\Wierzba\Desktop\LightYourBrain\obj\Debug\LightYourBrain.Properties.Resources.resources
+C:\Users\Wierzba\Desktop\LightYourBrain\obj\Debug\LightYourBrain.csproj.GenerateResource.cache
+C:\Users\Wierzba\Desktop\LightYourBrain\obj\Debug\LightYourBrain.csproj.CoreCompileInputs.cache
+C:\Users\Wierzba\Desktop\LightYourBrain\obj\Debug\LightYourBrain.exe
+C:\Users\Wierzba\Desktop\LightYourBrain\obj\Debug\LightYourBrain.pdb
+C:\Users\Wierzba\Desktop\LightYourBrain\obj\Debug\LightYourBrain.QuestionsForm_main.resources
