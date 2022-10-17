@@ -21,3 +21,4 @@ C:\Users\Wierzba\Desktop\LightYourBrain\obj\Debug\LightYourBrain.csproj.CoreComp
 C:\Users\Wierzba\Desktop\LightYourBrain\obj\Debug\LightYourBrain.exe
 C:\Users\Wierzba\Desktop\LightYourBrain\obj\Debug\LightYourBrain.pdb
 C:\Users\Wierzba\Desktop\LightYourBrain\obj\Debug\LightYourBrain.QuestionsForm_main.resources
+F:\Programowanie\C#\Projekty\LightYourBrain\obj\Debug\LightYourBrain.QuestionsForm_main.resources

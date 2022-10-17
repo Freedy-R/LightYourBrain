@@ -21,5 +21,10 @@ namespace LightYourBrain
         {
             
         }
+
+        private void buttonAnsw1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

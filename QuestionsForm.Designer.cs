@@ -29,355 +29,299 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuestionsForm_main));
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.scoreLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.splitContainerHints = new System.Windows.Forms.SplitContainer();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panelFunctional = new System.Windows.Forms.Panel();
-            this.mute = new System.Windows.Forms.Button();
             this.restartGame = new System.Windows.Forms.Button();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.mute = new System.Windows.Forms.Button();
             this.questionLabel = new System.Windows.Forms.Label();
-            this.answersBox = new System.Windows.Forms.SplitContainer();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.buttonAnsw1 = new System.Windows.Forms.Button();
             this.buttonAnsw3 = new System.Windows.Forms.Button();
-            this.buttonAnsw2 = new System.Windows.Forms.Button();
+            this.buttonAnsw1 = new System.Windows.Forms.Button();
             this.buttonAnsw4 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerHints)).BeginInit();
-            this.splitContainerHints.Panel1.SuspendLayout();
-            this.splitContainerHints.Panel2.SuspendLayout();
-            this.splitContainerHints.SuspendLayout();
-            this.panelFunctional.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.answersBox)).BeginInit();
-            this.answersBox.Panel1.SuspendLayout();
-            this.answersBox.Panel2.SuspendLayout();
-            this.answersBox.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.buttonAnsw2 = new System.Windows.Forms.Button();
+            this.QuestionLayout = new System.Windows.Forms.TableLayoutPanel();
+            this.QuestionLayout_Left = new System.Windows.Forms.TableLayoutPanel();
+            this.QuestionLayout_main = new System.Windows.Forms.TableLayoutPanel();
+            this.QuestionLayout_Answers = new System.Windows.Forms.TableLayoutPanel();
+            this.QuestionLayout.SuspendLayout();
+            this.QuestionLayout_Left.SuspendLayout();
+            this.QuestionLayout_main.SuspendLayout();
+            this.QuestionLayout_Answers.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.flowLayoutPanel1.Controls.Add(this.scoreLabel);
-            this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Controls.Add(this.label2);
-            this.flowLayoutPanel1.Controls.Add(this.splitContainerHints);
-            this.flowLayoutPanel1.Controls.Add(this.label3);
-            this.flowLayoutPanel1.Controls.Add(this.panelFunctional);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 631);
-            this.flowLayoutPanel1.TabIndex = 0;
             // 
             // scoreLabel
             // 
-            this.scoreLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.scoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.scoreLabel.Location = new System.Drawing.Point(3, 0);
+            this.scoreLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.scoreLabel.Font = new System.Drawing.Font("Bungee Spice Regular", 18.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.scoreLabel.Location = new System.Drawing.Point(0, 0);
+            this.scoreLabel.Margin = new System.Windows.Forms.Padding(0);
             this.scoreLabel.Name = "scoreLabel";
-            this.scoreLabel.Size = new System.Drawing.Size(194, 60);
+            this.scoreLabel.Size = new System.Drawing.Size(300, 102);
             this.scoreLabel.TabIndex = 0;
             this.scoreLabel.Text = "Your score: ";
-            this.scoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(0, 65);
-            this.label1.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 2);
-            this.label1.TabIndex = 1;
+            this.scoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(3, 72);
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Bungee Spice Regular", 24F);
+            this.label2.Location = new System.Drawing.Point(0, 204);
+            this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(194, 23);
+            this.label2.Size = new System.Drawing.Size(300, 102);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Avaible hints";
+            this.label2.Text = "Avaible lifesavers";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // splitContainerHints
-            // 
-            this.splitContainerHints.IsSplitterFixed = true;
-            this.splitContainerHints.Location = new System.Drawing.Point(3, 98);
-            this.splitContainerHints.Name = "splitContainerHints";
-            this.splitContainerHints.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainerHints.Panel1
-            // 
-            this.splitContainerHints.Panel1.Controls.Add(this.button1);
-            // 
-            // splitContainerHints.Panel2
-            // 
-            this.splitContainerHints.Panel2.Controls.Add(this.button2);
-            this.splitContainerHints.Size = new System.Drawing.Size(194, 150);
-            this.splitContainerHints.SplitterDistance = 75;
-            this.splitContainerHints.SplitterWidth = 1;
-            this.splitContainerHints.TabIndex = 3;
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(178)))), ((int)(((byte)(54)))));
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Font = new System.Drawing.Font("Bungee Spice Regular", 24F);
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(47, 13);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(10, 316);
+            this.button1.Margin = new System.Windows.Forms.Padding(10);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 50);
+            this.button1.Size = new System.Drawing.Size(280, 82);
             this.button1.TabIndex = 0;
             this.button1.Text = "50/50";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(178)))), ((int)(((byte)(54)))));
+            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Location = new System.Drawing.Point(47, 13);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Font = new System.Drawing.Font("Bungee Spice Regular", 24F);
+            this.button2.Location = new System.Drawing.Point(10, 418);
+            this.button2.Margin = new System.Windows.Forms.Padding(10);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 50);
+            this.button2.Size = new System.Drawing.Size(280, 82);
             this.button2.TabIndex = 0;
             this.button2.Text = "change question";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Location = new System.Drawing.Point(0, 256);
-            this.label3.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(197, 2);
-            this.label3.TabIndex = 4;
-            // 
-            // panelFunctional
-            // 
-            this.panelFunctional.Controls.Add(this.restartGame);
-            this.panelFunctional.Controls.Add(this.mute);
-            this.panelFunctional.Location = new System.Drawing.Point(3, 266);
-            this.panelFunctional.Name = "panelFunctional";
-            this.panelFunctional.Size = new System.Drawing.Size(194, 365);
-            this.panelFunctional.TabIndex = 5;
-            // 
-            // mute
-            // 
-            this.mute.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.mute.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.mute.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.mute.Location = new System.Drawing.Point(0, 330);
-            this.mute.Name = "mute";
-            this.mute.Size = new System.Drawing.Size(194, 35);
-            this.mute.TabIndex = 0;
-            this.mute.Text = "Mute music";
-            this.mute.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // restartGame
             // 
-            this.restartGame.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.restartGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.restartGame.Location = new System.Drawing.Point(0, 280);
+            this.restartGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(178)))), ((int)(((byte)(54)))));
+            this.restartGame.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.restartGame.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.restartGame.Font = new System.Drawing.Font("Bungee Spice Regular", 24F);
+            this.restartGame.Location = new System.Drawing.Point(10, 622);
+            this.restartGame.Margin = new System.Windows.Forms.Padding(10);
             this.restartGame.Name = "restartGame";
-            this.restartGame.Size = new System.Drawing.Size(194, 50);
+            this.restartGame.Size = new System.Drawing.Size(280, 82);
             this.restartGame.TabIndex = 1;
             this.restartGame.Text = "Restart game";
-            this.restartGame.UseVisualStyleBackColor = true;
+            this.restartGame.UseVisualStyleBackColor = false;
             // 
-            // flowLayoutPanel2
+            // mute
             // 
-            this.flowLayoutPanel2.Controls.Add(this.questionLabel);
-            this.flowLayoutPanel2.Controls.Add(this.answersBox);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(204, 2);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(809, 629);
-            this.flowLayoutPanel2.TabIndex = 1;
+            this.mute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(178)))), ((int)(((byte)(54)))));
+            this.mute.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mute.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.mute.Font = new System.Drawing.Font("Bungee Spice Regular", 24F);
+            this.mute.Location = new System.Drawing.Point(10, 724);
+            this.mute.Margin = new System.Windows.Forms.Padding(10);
+            this.mute.Name = "mute";
+            this.mute.Size = new System.Drawing.Size(280, 83);
+            this.mute.TabIndex = 0;
+            this.mute.Text = "Mute music";
+            this.mute.UseVisualStyleBackColor = false;
             // 
             // questionLabel
             // 
+            this.questionLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(243)))), ((int)(((byte)(140)))));
+            this.questionLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.questionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.questionLabel.Location = new System.Drawing.Point(3, 0);
+            this.questionLabel.Location = new System.Drawing.Point(0, 0);
+            this.questionLabel.Margin = new System.Windows.Forms.Padding(0);
             this.questionLabel.Name = "questionLabel";
             this.questionLabel.Padding = new System.Windows.Forms.Padding(7);
-            this.questionLabel.Size = new System.Drawing.Size(806, 356);
+            this.questionLabel.Size = new System.Drawing.Size(1201, 408);
             this.questionLabel.TabIndex = 0;
             this.questionLabel.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor in" +
     "cididunt ut labore et dolore magna aliqua.";
             this.questionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // answersBox
+            // buttonAnsw3
             // 
-            this.answersBox.Location = new System.Drawing.Point(3, 359);
-            this.answersBox.Name = "answersBox";
-            // 
-            // answersBox.Panel1
-            // 
-            this.answersBox.Panel1.Controls.Add(this.panel2);
-            this.answersBox.Panel1.Controls.Add(this.panel1);
-            // 
-            // answersBox.Panel2
-            // 
-            this.answersBox.Panel2.Controls.Add(this.panel4);
-            this.answersBox.Panel2.Controls.Add(this.panel3);
-            this.answersBox.Size = new System.Drawing.Size(806, 270);
-            this.answersBox.SplitterDistance = 403;
-            this.answersBox.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.buttonAnsw1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(403, 132);
-            this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.buttonAnsw3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 138);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(403, 132);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.buttonAnsw2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(399, 132);
-            this.panel3.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.buttonAnsw4);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 138);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(399, 132);
-            this.panel4.TabIndex = 1;
+            this.buttonAnsw3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(178)))), ((int)(((byte)(54)))));
+            this.buttonAnsw3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonAnsw3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonAnsw3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonAnsw3.Location = new System.Drawing.Point(12, 215);
+            this.buttonAnsw3.Margin = new System.Windows.Forms.Padding(10);
+            this.buttonAnsw3.Name = "buttonAnsw3";
+            this.buttonAnsw3.Size = new System.Drawing.Size(577, 182);
+            this.buttonAnsw3.TabIndex = 0;
+            this.buttonAnsw3.Text = "Odp3";
+            this.buttonAnsw3.UseVisualStyleBackColor = false;
             // 
             // buttonAnsw1
             // 
+            this.buttonAnsw1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(178)))), ((int)(((byte)(54)))));
             this.buttonAnsw1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonAnsw1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonAnsw1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonAnsw1.Location = new System.Drawing.Point(0, 0);
+            this.buttonAnsw1.Location = new System.Drawing.Point(12, 12);
+            this.buttonAnsw1.Margin = new System.Windows.Forms.Padding(10);
             this.buttonAnsw1.Name = "buttonAnsw1";
-            this.buttonAnsw1.Size = new System.Drawing.Size(403, 132);
+            this.buttonAnsw1.Size = new System.Drawing.Size(577, 181);
             this.buttonAnsw1.TabIndex = 0;
             this.buttonAnsw1.Text = "Odp 1";
-            this.buttonAnsw1.UseVisualStyleBackColor = true;
-            // 
-            // buttonAnsw3
-            // 
-            this.buttonAnsw3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonAnsw3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonAnsw3.Location = new System.Drawing.Point(0, 0);
-            this.buttonAnsw3.Name = "buttonAnsw3";
-            this.buttonAnsw3.Size = new System.Drawing.Size(403, 132);
-            this.buttonAnsw3.TabIndex = 0;
-            this.buttonAnsw3.Text = "Odp3";
-            this.buttonAnsw3.UseVisualStyleBackColor = true;
-            // 
-            // buttonAnsw2
-            // 
-            this.buttonAnsw2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonAnsw2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonAnsw2.Location = new System.Drawing.Point(0, 0);
-            this.buttonAnsw2.Name = "buttonAnsw2";
-            this.buttonAnsw2.Size = new System.Drawing.Size(399, 132);
-            this.buttonAnsw2.TabIndex = 0;
-            this.buttonAnsw2.Text = "Odp2";
-            this.buttonAnsw2.UseVisualStyleBackColor = true;
+            this.buttonAnsw1.UseVisualStyleBackColor = false;
+            this.buttonAnsw1.Click += new System.EventHandler(this.buttonAnsw1_Click);
             // 
             // buttonAnsw4
             // 
+            this.buttonAnsw4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(178)))), ((int)(((byte)(54)))));
             this.buttonAnsw4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonAnsw4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonAnsw4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonAnsw4.Location = new System.Drawing.Point(0, 0);
+            this.buttonAnsw4.Location = new System.Drawing.Point(611, 215);
+            this.buttonAnsw4.Margin = new System.Windows.Forms.Padding(10);
             this.buttonAnsw4.Name = "buttonAnsw4";
-            this.buttonAnsw4.Size = new System.Drawing.Size(399, 132);
+            this.buttonAnsw4.Size = new System.Drawing.Size(578, 182);
             this.buttonAnsw4.TabIndex = 0;
             this.buttonAnsw4.Text = "Odp4";
-            this.buttonAnsw4.UseVisualStyleBackColor = true;
+            this.buttonAnsw4.UseVisualStyleBackColor = false;
+            // 
+            // buttonAnsw2
+            // 
+            this.buttonAnsw2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(178)))), ((int)(((byte)(54)))));
+            this.buttonAnsw2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonAnsw2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonAnsw2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonAnsw2.Location = new System.Drawing.Point(611, 12);
+            this.buttonAnsw2.Margin = new System.Windows.Forms.Padding(10);
+            this.buttonAnsw2.Name = "buttonAnsw2";
+            this.buttonAnsw2.Size = new System.Drawing.Size(578, 181);
+            this.buttonAnsw2.TabIndex = 0;
+            this.buttonAnsw2.Text = "Odp2";
+            this.buttonAnsw2.UseVisualStyleBackColor = false;
+            // 
+            // QuestionLayout
+            // 
+            this.QuestionLayout.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
+            this.QuestionLayout.ColumnCount = 2;
+            this.QuestionLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.QuestionLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.QuestionLayout.Controls.Add(this.QuestionLayout_Left, 0, 0);
+            this.QuestionLayout.Controls.Add(this.QuestionLayout_main, 1, 0);
+            this.QuestionLayout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.QuestionLayout.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
+            this.QuestionLayout.Location = new System.Drawing.Point(0, 0);
+            this.QuestionLayout.Margin = new System.Windows.Forms.Padding(0);
+            this.QuestionLayout.Name = "QuestionLayout";
+            this.QuestionLayout.RowCount = 1;
+            this.QuestionLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.QuestionLayout.Size = new System.Drawing.Size(1507, 821);
+            this.QuestionLayout.TabIndex = 3;
+            // 
+            // QuestionLayout_Left
+            // 
+            this.QuestionLayout_Left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(225)))), ((int)(((byte)(97)))));
+            this.QuestionLayout_Left.ColumnCount = 1;
+            this.QuestionLayout_Left.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.QuestionLayout_Left.Controls.Add(this.label2, 0, 2);
+            this.QuestionLayout_Left.Controls.Add(this.button1, 0, 3);
+            this.QuestionLayout_Left.Controls.Add(this.button2, 0, 4);
+            this.QuestionLayout_Left.Controls.Add(this.scoreLabel, 0, 0);
+            this.QuestionLayout_Left.Controls.Add(this.mute, 0, 7);
+            this.QuestionLayout_Left.Controls.Add(this.restartGame, 0, 6);
+            this.QuestionLayout_Left.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.QuestionLayout_Left.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
+            this.QuestionLayout_Left.Location = new System.Drawing.Point(2, 2);
+            this.QuestionLayout_Left.Margin = new System.Windows.Forms.Padding(0);
+            this.QuestionLayout_Left.Name = "QuestionLayout_Left";
+            this.QuestionLayout_Left.RowCount = 8;
+            this.QuestionLayout_Left.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.QuestionLayout_Left.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.QuestionLayout_Left.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.QuestionLayout_Left.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.QuestionLayout_Left.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.QuestionLayout_Left.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.QuestionLayout_Left.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.QuestionLayout_Left.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.QuestionLayout_Left.Size = new System.Drawing.Size(300, 817);
+            this.QuestionLayout_Left.TabIndex = 0;
+            // 
+            // QuestionLayout_main
+            // 
+            this.QuestionLayout_main.ColumnCount = 1;
+            this.QuestionLayout_main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.QuestionLayout_main.Controls.Add(this.QuestionLayout_Answers, 0, 1);
+            this.QuestionLayout_main.Controls.Add(this.questionLabel, 0, 0);
+            this.QuestionLayout_main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.QuestionLayout_main.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
+            this.QuestionLayout_main.Location = new System.Drawing.Point(304, 2);
+            this.QuestionLayout_main.Margin = new System.Windows.Forms.Padding(0);
+            this.QuestionLayout_main.Name = "QuestionLayout_main";
+            this.QuestionLayout_main.RowCount = 2;
+            this.QuestionLayout_main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.QuestionLayout_main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.QuestionLayout_main.Size = new System.Drawing.Size(1201, 817);
+            this.QuestionLayout_main.TabIndex = 4;
+            // 
+            // QuestionLayout_Answers
+            // 
+            this.QuestionLayout_Answers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(243)))), ((int)(((byte)(140)))));
+            this.QuestionLayout_Answers.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
+            this.QuestionLayout_Answers.ColumnCount = 2;
+            this.QuestionLayout_Answers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.QuestionLayout_Answers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.QuestionLayout_Answers.Controls.Add(this.buttonAnsw1, 0, 0);
+            this.QuestionLayout_Answers.Controls.Add(this.buttonAnsw2, 1, 0);
+            this.QuestionLayout_Answers.Controls.Add(this.buttonAnsw4, 1, 1);
+            this.QuestionLayout_Answers.Controls.Add(this.buttonAnsw3, 0, 1);
+            this.QuestionLayout_Answers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.QuestionLayout_Answers.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
+            this.QuestionLayout_Answers.Location = new System.Drawing.Point(0, 408);
+            this.QuestionLayout_Answers.Margin = new System.Windows.Forms.Padding(0);
+            this.QuestionLayout_Answers.Name = "QuestionLayout_Answers";
+            this.QuestionLayout_Answers.RowCount = 2;
+            this.QuestionLayout_Answers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.QuestionLayout_Answers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.QuestionLayout_Answers.Size = new System.Drawing.Size(1201, 409);
+            this.QuestionLayout_Answers.TabIndex = 4;
             // 
             // QuestionsForm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 631);
-            this.Controls.Add(this.flowLayoutPanel2);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.ClientSize = new System.Drawing.Size(1507, 821);
+            this.Controls.Add(this.QuestionLayout);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "QuestionsForm_main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuestionsForm";
             this.Load += new System.EventHandler(this.QuestionsForm_Load);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.splitContainerHints.Panel1.ResumeLayout(false);
-            this.splitContainerHints.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerHints)).EndInit();
-            this.splitContainerHints.ResumeLayout(false);
-            this.panelFunctional.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.answersBox.Panel1.ResumeLayout(false);
-            this.answersBox.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.answersBox)).EndInit();
-            this.answersBox.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
+            this.QuestionLayout.ResumeLayout(false);
+            this.QuestionLayout_Left.ResumeLayout(false);
+            this.QuestionLayout_main.ResumeLayout(false);
+            this.QuestionLayout_Answers.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label scoreLabel;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.SplitContainer splitContainerHints;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panelFunctional;
         private System.Windows.Forms.Button restartGame;
         private System.Windows.Forms.Button mute;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Label questionLabel;
-        private System.Windows.Forms.SplitContainer answersBox;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button buttonAnsw3;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonAnsw1;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button buttonAnsw4;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button buttonAnsw2;
+        private System.Windows.Forms.TableLayoutPanel QuestionLayout;
+        private System.Windows.Forms.TableLayoutPanel QuestionLayout_Left;
+        private System.Windows.Forms.TableLayoutPanel QuestionLayout_main;
+        private System.Windows.Forms.TableLayoutPanel QuestionLayout_Answers;
     }
 }
