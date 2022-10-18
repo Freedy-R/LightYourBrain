@@ -16,5 +16,12 @@ namespace LightYourBrain
         {
             InitializeComponent();
         }
+
+        private void EndScore_Load(object sender, EventArgs e)
+        {
+            // TODO: Ten wiersz kodu wczytuje dane do tabeli 'dataScoreDataSet.Table' . Możesz go przenieść lub usunąć.
+            this.tableTableAdapter.Fill(this.dataScoreDataSet.Table);
+
+        }
     }
 }
