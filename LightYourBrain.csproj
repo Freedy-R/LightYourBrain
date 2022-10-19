@@ -66,11 +66,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataScoreDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DataScoreDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataScoreDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="EndScore.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,17 +119,6 @@
     </None>
     <None Include="DataScoreDataSet.xss">
       <DependentUpon>DataScoreDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DataScoreDataSet1.xsc">
-      <DependentUpon>DataScoreDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DataScoreDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataScoreDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DataScoreDataSet1.xss">
-      <DependentUpon>DataScoreDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

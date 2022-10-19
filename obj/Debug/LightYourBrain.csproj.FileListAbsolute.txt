@@ -42,3 +42,5 @@ C:\Users\Lenovo\Documents\GitHub\LightYourBrain\obj\Debug\LightYourBrain.exe
 C:\Users\Lenovo\Documents\GitHub\LightYourBrain\obj\Debug\LightYourBrain.pdb
 C:\Users\Lenovo\Documents\GitHub\LightYourBrain\bin\Debug\Question.mdf
 C:\Users\Lenovo\Documents\GitHub\LightYourBrain\bin\Debug\Question_log.ldf
+F:\Programowanie\C#\Projekty\LightYourBrain\bin\Debug\Question.mdf
+F:\Programowanie\C#\Projekty\LightYourBrain\bin\Debug\Question_log.ldf
