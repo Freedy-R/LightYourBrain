@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publikuj\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -66,6 +66,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataScoreDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataScoreDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataScoreDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="EndScore.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +85,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuestionDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuestionDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="QuestionsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +125,17 @@
     <None Include="DataScoreDataSet.xss">
       <DependentUpon>DataScoreDataSet.xsd</DependentUpon>
     </None>
+    <None Include="DataScoreDataSet1.xsc">
+      <DependentUpon>DataScoreDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataScoreDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataScoreDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataScoreDataSet1.xss">
+      <DependentUpon>DataScoreDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -124,6 +145,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QuestionDataSet.xsc">
+      <DependentUpon>QuestionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuestionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuestionDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuestionDataSet.xss">
+      <DependentUpon>QuestionDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -138,6 +170,13 @@
     <Content Include="DataScore_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DataScore.mdf</DependentUpon>
+    </Content>
+    <Content Include="Question.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Question_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Question.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

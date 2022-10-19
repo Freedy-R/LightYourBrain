@@ -33,5 +33,16 @@ namespace LightYourBrain.Properties {
                 return ((string)(this["DataScoreCS"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Question.mdf;" +
+            "Integrated Security=True")]
+        public string QuestionCS {
+            get {
+                return ((string)(this["QuestionCS"]));
+            }
+        }
     }
 }

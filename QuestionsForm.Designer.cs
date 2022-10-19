@@ -53,7 +53,7 @@
             // scoreLabel
             // 
             this.scoreLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.scoreLabel.Font = new System.Drawing.Font("Bungee Spice Regular", 18.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.scoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.scoreLabel.Location = new System.Drawing.Point(0, 0);
             this.scoreLabel.Margin = new System.Windows.Forms.Padding(0);
             this.scoreLabel.Name = "scoreLabel";
@@ -61,11 +61,12 @@
             this.scoreLabel.TabIndex = 0;
             this.scoreLabel.Text = "Your score: ";
             this.scoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.scoreLabel.Click += new System.EventHandler(this.scoreLabel_Click);
             // 
             // label2
             // 
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Bungee Spice Regular", 24F);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.label2.Location = new System.Drawing.Point(0, 204);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
@@ -79,7 +80,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(178)))), ((int)(((byte)(54)))));
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Bungee Spice Regular", 24F);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(10, 316);
             this.button1.Margin = new System.Windows.Forms.Padding(10);
@@ -94,13 +95,13 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(178)))), ((int)(((byte)(54)))));
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Bungee Spice Regular", 24F);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.button2.Location = new System.Drawing.Point(10, 418);
             this.button2.Margin = new System.Windows.Forms.Padding(10);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(280, 82);
             this.button2.TabIndex = 0;
-            this.button2.Text = "change question";
+            this.button2.Text = "omit question";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // restartGame
@@ -108,7 +109,7 @@
             this.restartGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(178)))), ((int)(((byte)(54)))));
             this.restartGame.Dock = System.Windows.Forms.DockStyle.Fill;
             this.restartGame.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.restartGame.Font = new System.Drawing.Font("Bungee Spice Regular", 24F);
+            this.restartGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.restartGame.Location = new System.Drawing.Point(10, 622);
             this.restartGame.Margin = new System.Windows.Forms.Padding(10);
             this.restartGame.Name = "restartGame";
@@ -122,7 +123,7 @@
             this.mute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(178)))), ((int)(((byte)(54)))));
             this.mute.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mute.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.mute.Font = new System.Drawing.Font("Bungee Spice Regular", 24F);
+            this.mute.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.mute.Location = new System.Drawing.Point(10, 724);
             this.mute.Margin = new System.Windows.Forms.Padding(10);
             this.mute.Name = "mute";
@@ -145,6 +146,7 @@
             this.questionLabel.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor in" +
     "cididunt ut labore et dolore magna aliqua.";
             this.questionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.questionLabel.Click += new System.EventHandler(this.questionLabel_Click);
             // 
             // buttonAnsw3
             // 
@@ -157,8 +159,9 @@
             this.buttonAnsw3.Name = "buttonAnsw3";
             this.buttonAnsw3.Size = new System.Drawing.Size(577, 182);
             this.buttonAnsw3.TabIndex = 0;
-            this.buttonAnsw3.Text = "Odp3";
+            this.buttonAnsw3.Text = "C";
             this.buttonAnsw3.UseVisualStyleBackColor = false;
+            this.buttonAnsw3.Click += new System.EventHandler(this.buttonAnsw3_Click);
             // 
             // buttonAnsw1
             // 
@@ -171,7 +174,7 @@
             this.buttonAnsw1.Name = "buttonAnsw1";
             this.buttonAnsw1.Size = new System.Drawing.Size(577, 181);
             this.buttonAnsw1.TabIndex = 0;
-            this.buttonAnsw1.Text = "Odp 1";
+            this.buttonAnsw1.Text = "A";
             this.buttonAnsw1.UseVisualStyleBackColor = false;
             this.buttonAnsw1.Click += new System.EventHandler(this.buttonAnsw1_Click);
             // 
@@ -186,8 +189,9 @@
             this.buttonAnsw4.Name = "buttonAnsw4";
             this.buttonAnsw4.Size = new System.Drawing.Size(578, 182);
             this.buttonAnsw4.TabIndex = 0;
-            this.buttonAnsw4.Text = "Odp4";
+            this.buttonAnsw4.Text = "D";
             this.buttonAnsw4.UseVisualStyleBackColor = false;
+            this.buttonAnsw4.Click += new System.EventHandler(this.buttonAnsw4_Click);
             // 
             // buttonAnsw2
             // 
@@ -200,8 +204,9 @@
             this.buttonAnsw2.Name = "buttonAnsw2";
             this.buttonAnsw2.Size = new System.Drawing.Size(578, 181);
             this.buttonAnsw2.TabIndex = 0;
-            this.buttonAnsw2.Text = "Odp2";
+            this.buttonAnsw2.Text = "B";
             this.buttonAnsw2.UseVisualStyleBackColor = false;
+            this.buttonAnsw2.Click += new System.EventHandler(this.buttonAnsw2_Click);
             // 
             // QuestionLayout
             // 

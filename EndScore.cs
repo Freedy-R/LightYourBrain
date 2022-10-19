@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
 
 namespace LightYourBrain
 {
     public partial class EndScore : Form
     {
+        
         public EndScore()
         {
             InitializeComponent();
@@ -19,8 +21,12 @@ namespace LightYourBrain
 
         private void EndScore_Load(object sender, EventArgs e)
         {
-            // TODO: Ten wiersz kodu wczytuje dane do tabeli 'dataScoreDataSet.Table' . Możesz go przenieść lub usunąć.
             this.tableTableAdapter.Fill(this.dataScoreDataSet.Table);
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }
