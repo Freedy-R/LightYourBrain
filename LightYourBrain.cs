@@ -16,11 +16,32 @@ namespace LightYourBrain
         {
             InitializeComponent();
         }
-
+        
+        public void DisplayForm(object Form)
+        {
+            if (this.showWindows.Controls.Count > 0)
+                this.showWindows.Controls.RemoveAt(0);
+            Form f = Form as Form;
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            this.showWindows.Controls.Add(f);
+            this.showWindows.Tag = f;
+            f.Show();
+        }
+        
         private void StartGame(object sender, MouseEventArgs e)
         {
-            var questionsForm = new QuestionsForm_main();
-            questionsForm.ShowDialog();
+           DisplayForm(new QuestionsForm_main());
+        }
+
+        private void btnTable_Click(object sender, EventArgs e)
+        {
+            DisplayForm(new EndScore());
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

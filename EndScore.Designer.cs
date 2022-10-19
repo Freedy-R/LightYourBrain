@@ -32,17 +32,17 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataScoreDataSet = new LightYourBrain.DataScoreDataSet();
-            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tableTableAdapter = new LightYourBrain.DataScoreDataSetTableAdapters.TableTableAdapter();
-            this.tableAdapterManager = new LightYourBrain.DataScoreDataSetTableAdapters.TableAdapterManager();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.scoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataScoreDataSet = new LightYourBrain.DataScoreDataSet();
+            this.tableTableAdapter = new LightYourBrain.DataScoreDataSetTableAdapters.TableTableAdapter();
+            this.tableAdapterManager = new LightYourBrain.DataScoreDataSetTableAdapters.TableAdapterManager();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataScoreDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataScoreDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -89,26 +89,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1348, 574);
             this.dataGridView1.TabIndex = 1;
             // 
-            // dataScoreDataSet
-            // 
-            this.dataScoreDataSet.DataSetName = "DataScoreDataSet";
-            this.dataScoreDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tableBindingSource
-            // 
-            this.tableBindingSource.DataMember = "Table";
-            this.tableBindingSource.DataSource = this.dataScoreDataSet;
-            // 
-            // tableTableAdapter
-            // 
-            this.tableTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.TableTableAdapter = this.tableTableAdapter;
-            this.tableAdapterManager.UpdateOrder = LightYourBrain.DataScoreDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -127,6 +107,26 @@
             this.scoreDataGridViewTextBoxColumn.HeaderText = "Score";
             this.scoreDataGridViewTextBoxColumn.Name = "scoreDataGridViewTextBoxColumn";
             // 
+            // tableBindingSource
+            // 
+            this.tableBindingSource.DataMember = "Table";
+            this.tableBindingSource.DataSource = this.dataScoreDataSet;
+            // 
+            // dataScoreDataSet
+            // 
+            this.dataScoreDataSet.DataSetName = "DataScoreDataSet";
+            this.dataScoreDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tableTableAdapter
+            // 
+            this.tableTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.TableTableAdapter = this.tableTableAdapter;
+            this.tableAdapterManager.UpdateOrder = LightYourBrain.DataScoreDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // EndScore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -134,14 +134,15 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(243)))), ((int)(((byte)(140)))));
             this.ClientSize = new System.Drawing.Size(1354, 724);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EndScore";
             this.Text = "EndScore";
             this.Load += new System.EventHandler(this.EndScore_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataScoreDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataScoreDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
