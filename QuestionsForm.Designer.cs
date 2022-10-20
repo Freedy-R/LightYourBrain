@@ -61,7 +61,6 @@
             this.scoreLabel.TabIndex = 0;
             this.scoreLabel.Text = "Your score: ";
             this.scoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.scoreLabel.Click += new System.EventHandler(this.scoreLabel_Click);
             // 
             // label2
             // 
@@ -89,6 +88,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "50/50";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.halfonhalf_Click);
             // 
             // button2
             // 
@@ -146,7 +146,6 @@
             this.questionLabel.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor in" +
     "cididunt ut labore et dolore magna aliqua.";
             this.questionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.questionLabel.Click += new System.EventHandler(this.questionLabel_Click);
             // 
             // buttonAnsw3
             // 
