@@ -48,7 +48,7 @@
             this.btnStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(178)))), ((int)(((byte)(54)))));
             this.btnStart.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnStart.Font = new System.Drawing.Font("Bungee Spice Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnStart.Location = new System.Drawing.Point(20, 230);
             this.btnStart.Margin = new System.Windows.Forms.Padding(20);
             this.btnStart.Name = "btnStart";
@@ -56,6 +56,7 @@
             this.btnStart.TabIndex = 0;
             this.btnStart.Text = "Play";
             this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             this.btnStart.MouseClick += new System.Windows.Forms.MouseEventHandler(this.StartGame);
             // 
             // btnTable
@@ -63,7 +64,7 @@
             this.btnTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(178)))), ((int)(((byte)(54)))));
             this.btnTable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnTable.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnTable.Font = new System.Drawing.Font("Bungee Spice Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnTable.Location = new System.Drawing.Point(20, 335);
             this.btnTable.Margin = new System.Windows.Forms.Padding(20);
             this.btnTable.Name = "btnTable";
@@ -78,7 +79,7 @@
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(178)))), ((int)(((byte)(54)))));
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnExit.Font = new System.Drawing.Font("Bungee Spice Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnExit.Location = new System.Drawing.Point(20, 440);
             this.btnExit.Margin = new System.Windows.Forms.Padding(20);
             this.btnExit.Name = "btnExit";

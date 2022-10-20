@@ -31,7 +31,6 @@ C:\Users\Lenovo\Documents\GitHub\LightYourBrain\bin\Debug\LightYourBrain.exe.con
 C:\Users\Lenovo\Documents\GitHub\LightYourBrain\bin\Debug\LightYourBrain.exe
 C:\Users\Lenovo\Documents\GitHub\LightYourBrain\bin\Debug\LightYourBrain.pdb
 C:\Users\Lenovo\Documents\GitHub\LightYourBrain\obj\Debug\LightYourBrain.csproj.AssemblyReference.cache
-C:\Users\Lenovo\Documents\GitHub\LightYourBrain\obj\Debug\LightYourBrain.csproj.SuggestedBindingRedirects.cache
 C:\Users\Lenovo\Documents\GitHub\LightYourBrain\obj\Debug\LightYourBrain.EndScore.resources
 C:\Users\Lenovo\Documents\GitHub\LightYourBrain\obj\Debug\LightYourBrain.LightYourBrain_mainForm.resources
 C:\Users\Lenovo\Documents\GitHub\LightYourBrain\obj\Debug\LightYourBrain.Properties.Resources.resources

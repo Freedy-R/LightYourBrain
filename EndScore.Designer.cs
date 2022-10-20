@@ -35,12 +35,14 @@
             this.dataScoreDataSet = new LightYourBrain.DataScoreDataSet();
             this.tableAdapterManager = new LightYourBrain.DataScoreDataSetTableAdapters.TableAdapterManager();
             this.tableTableAdapter = new LightYourBrain.DataScoreDataSetTableAdapters.TableTableAdapter();
+            this.tableBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tableDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataScoreDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,6 +74,7 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Score";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tableBindingSource
             // 
@@ -94,6 +97,11 @@
             // 
             this.tableTableAdapter.ClearBeforeFill = true;
             // 
+            // tableBindingSource1
+            // 
+            this.tableBindingSource1.DataMember = "Table";
+            this.tableBindingSource1.DataSource = this.dataScoreDataSet;
+            // 
             // tableDataGridView
             // 
             this.tableDataGridView.AutoGenerateColumns = false;
@@ -103,6 +111,7 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.tableDataGridView.DataSource = this.tableBindingSource;
+            this.tableDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableDataGridView.Location = new System.Drawing.Point(3, 147);
             this.tableDataGridView.Name = "tableDataGridView";
             this.tableDataGridView.Size = new System.Drawing.Size(1348, 574);
@@ -135,6 +144,7 @@
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataScoreDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableDataGridView)).EndInit();
             this.ResumeLayout(false);
 
@@ -149,9 +159,10 @@
         private DataScoreDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private DataScoreDataSetTableAdapters.TableTableAdapter tableTableAdapter;
         private System.Windows.Forms.DataGridView tableDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private DataScoreDataSetTableAdapters.TableTableAdapter tableTableAdapter;
+        private System.Windows.Forms.BindingSource tableBindingSource1;
     }
 }
