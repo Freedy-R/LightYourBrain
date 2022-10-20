@@ -29,7 +29,6 @@ namespace LightYourBrain
 
         private void QuestionsForm_Load(object sender, EventArgs e)
         {
-            scoreLabel.Text = "Your Score: " + score;
             connection.Open();
             string selectquery = "SELECT Question FROM Questions WHERE id =" + n;
             SqlCommand cmd = new SqlCommand(selectquery, connection);
@@ -99,7 +98,7 @@ namespace LightYourBrain
 
             answer = "A";
             checkanswer();
-            scoreLabel.Text = "Your Score: " + score;
+            scoreLabel.Text = score.ToString();
             loadQuenstions();
         }
         private void buttonAnsw2_Click(object sender, EventArgs e)
@@ -107,7 +106,7 @@ namespace LightYourBrain
 
             answer = "B";
             checkanswer();
-            scoreLabel.Text = "Your Score: " + score;
+            scoreLabel.Text = score.ToString();
             loadQuenstions();
         }
         private void buttonAnsw3_Click(object sender, EventArgs e)
@@ -115,7 +114,7 @@ namespace LightYourBrain
 
             answer = "C";
             checkanswer();
-            scoreLabel.Text = "Your Score: " + score;
+            scoreLabel.Text = score.ToString();
             loadQuenstions();
         }
         private void buttonAnsw4_Click(object sender, EventArgs e)
@@ -123,7 +122,7 @@ namespace LightYourBrain
 
             answer = "D";
             checkanswer();
-            scoreLabel.Text = "Your Score: " + score;
+            scoreLabel.Text = score.ToString();
             loadQuenstions();
         }
 
@@ -191,6 +190,12 @@ namespace LightYourBrain
                     break;
             }
             connection.Close();
+        }
+
+        private void btnOmit_Click(object sender, EventArgs e)
+        {
+            scoreLabel.Text = (score - 100).ToString();
+            loadQuenstions();
         }
     }
 }

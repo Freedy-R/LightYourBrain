@@ -29,10 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuestionsForm_main));
-            this.scoreLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnOmit = new System.Windows.Forms.Button();
             this.restartGame = new System.Windows.Forms.Button();
             this.mute = new System.Windows.Forms.Button();
             this.questionLabel = new System.Windows.Forms.Label();
@@ -42,25 +41,17 @@
             this.buttonAnsw2 = new System.Windows.Forms.Button();
             this.QuestionLayout = new System.Windows.Forms.TableLayoutPanel();
             this.QuestionLayout_Left = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.scoreLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.QuestionLayout_main = new System.Windows.Forms.TableLayoutPanel();
             this.QuestionLayout_Answers = new System.Windows.Forms.TableLayoutPanel();
             this.QuestionLayout.SuspendLayout();
             this.QuestionLayout_Left.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.QuestionLayout_main.SuspendLayout();
             this.QuestionLayout_Answers.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // scoreLabel
-            // 
-            this.scoreLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.scoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.scoreLabel.Location = new System.Drawing.Point(0, 0);
-            this.scoreLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.scoreLabel.Name = "scoreLabel";
-            this.scoreLabel.Size = new System.Drawing.Size(300, 102);
-            this.scoreLabel.TabIndex = 0;
-            this.scoreLabel.Text = "Your score: ";
-            this.scoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
@@ -90,19 +81,20 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.halfonhalf_Click);
             // 
-            // button2
+            // btnOmit
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(178)))), ((int)(((byte)(54)))));
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.button2.Location = new System.Drawing.Point(10, 418);
-            this.button2.Margin = new System.Windows.Forms.Padding(10);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(280, 82);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "omit question";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnOmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(178)))), ((int)(((byte)(54)))));
+            this.btnOmit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnOmit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnOmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.btnOmit.Location = new System.Drawing.Point(10, 418);
+            this.btnOmit.Margin = new System.Windows.Forms.Padding(10);
+            this.btnOmit.Name = "btnOmit";
+            this.btnOmit.Size = new System.Drawing.Size(280, 82);
+            this.btnOmit.TabIndex = 0;
+            this.btnOmit.Text = "omit question";
+            this.btnOmit.UseVisualStyleBackColor = false;
+            this.btnOmit.Click += new System.EventHandler(this.btnOmit_Click);
             // 
             // restartGame
             // 
@@ -232,10 +224,10 @@
             this.QuestionLayout_Left.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.QuestionLayout_Left.Controls.Add(this.label2, 0, 2);
             this.QuestionLayout_Left.Controls.Add(this.button1, 0, 3);
-            this.QuestionLayout_Left.Controls.Add(this.button2, 0, 4);
-            this.QuestionLayout_Left.Controls.Add(this.scoreLabel, 0, 0);
+            this.QuestionLayout_Left.Controls.Add(this.btnOmit, 0, 4);
             this.QuestionLayout_Left.Controls.Add(this.mute, 0, 7);
             this.QuestionLayout_Left.Controls.Add(this.restartGame, 0, 6);
+            this.QuestionLayout_Left.Controls.Add(this.tableLayoutPanel1, 0, 0);
             this.QuestionLayout_Left.Dock = System.Windows.Forms.DockStyle.Fill;
             this.QuestionLayout_Left.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
             this.QuestionLayout_Left.Location = new System.Drawing.Point(2, 2);
@@ -252,6 +244,46 @@
             this.QuestionLayout_Left.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.QuestionLayout_Left.Size = new System.Drawing.Size(300, 817);
             this.QuestionLayout_Left.TabIndex = 0;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.scoreLabel, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(300, 102);
+            this.tableLayoutPanel1.TabIndex = 4;
+            // 
+            // scoreLabel
+            // 
+            this.scoreLabel.AutoSize = true;
+            this.scoreLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.scoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.scoreLabel.Location = new System.Drawing.Point(153, 0);
+            this.scoreLabel.Name = "scoreLabel";
+            this.scoreLabel.Size = new System.Drawing.Size(144, 102);
+            this.scoreLabel.TabIndex = 3;
+            this.scoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(144, 102);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Your score:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // QuestionLayout_main
             // 
@@ -306,6 +338,8 @@
             this.Load += new System.EventHandler(this.QuestionsForm_Load);
             this.QuestionLayout.ResumeLayout(false);
             this.QuestionLayout_Left.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.QuestionLayout_main.ResumeLayout(false);
             this.QuestionLayout_Answers.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -313,10 +347,9 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label scoreLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnOmit;
         private System.Windows.Forms.Button restartGame;
         private System.Windows.Forms.Button mute;
         private System.Windows.Forms.Label questionLabel;
@@ -328,5 +361,8 @@
         private System.Windows.Forms.TableLayoutPanel QuestionLayout_Left;
         private System.Windows.Forms.TableLayoutPanel QuestionLayout_main;
         private System.Windows.Forms.TableLayoutPanel QuestionLayout_Answers;
+        private System.Windows.Forms.Label scoreLabel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label label1;
     }
 }
